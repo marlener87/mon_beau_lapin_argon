@@ -4,7 +4,6 @@
       <!-- shape Hero -->
       <section class="section-shaped my-0">
         <div class="shape shape-style-1 shape-default shape-skew">
-          <img src="../../public/img/images/banniere2.jpg" class="img-fluid" alt="Responsive image" />
           <span></span>
           <span></span>
           <span></span>
@@ -15,6 +14,7 @@
           <span></span>
           <span></span>
         </div>
+
         <div class="container shape-container d-flex">
           <div class="col px-0">
             <div class="row">

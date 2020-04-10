@@ -90,6 +90,9 @@
     </base-nav>
 
     <!-- BANNIERE -->
+    <div class="container-fluid">
+      <img src="../../public/img/images/banniere2.jpg" class="img-fluid" alt="Responsive image" />
+    </div>
   </header>
 </template>
 
@@ -109,11 +112,16 @@ export default {
 
 <style>
 .text-white {
-  font-size: 80px;
+  font-size: 6vw;
   font-family: "polTangerine", "Comic Sans MS", serif;
 }
 span {
   font-size: 20px;
   font-family: "polYrsa", "Comic Sans MS", serif;
+}
+img {
+  padding-top: 120px;
+  margin-left: -15px;
+  padding-right: -25px;
 }
 </style>
