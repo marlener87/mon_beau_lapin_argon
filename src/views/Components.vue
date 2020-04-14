@@ -1,7 +1,7 @@
 <template>
   <!-- TEXTE -->
   <div class="container-fluid body">
-    <div class="text">
+    <div class="text m-1">
       <h1
         class="phrase font-weight-bold text-center"
       >Vous souhaitez tout savoir sur nos amis les lapins, alors bienvenue.</h1>
@@ -25,7 +25,7 @@
         <img
           src="../../public/img/images/logo.jpg"
           alt="lapin bélier gris"
-          class="rounded logo img-fluid d-none d-md-block"
+          class="rounded logo img-fluid d-none d-md-block m-1"
         />
       </div>
 

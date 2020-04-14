@@ -1,5 +1,10 @@
 <template>
   <header class="header-global">
+    <!-- TITRE -->
+    <b-row>
+      <h1 class="text-white font-weight-bold">Mon beau lapin</h1>
+    </b-row>
+
     <base-nav
       class="navbar-main"
       transparent
@@ -8,11 +13,6 @@
       expand
       style="background: #4fb68d"
     >
-      <!-- TITRE -->
-      <div class="container">
-        <h1 class="text-white font-weight-bold">Mon beau lapin</h1>
-      </div>
-
       <!-- MENU DEROULANT -->
       <div class="container">
         <div class="row" slot="content-header" slot-scope="{closeMenu}">
@@ -100,12 +100,14 @@
 import BaseNav from "@/components/BaseNav";
 import BaseDropdown from "@/components/BaseDropdown";
 import CloseButton from "@/components/CloseButton";
+import { BRow } from "bootstrap-vue/esm/components/layout/row";
 
 export default {
   components: {
     BaseNav,
     CloseButton,
-    BaseDropdown
+    BaseDropdown,
+    BRow
   }
 };
 </script>
