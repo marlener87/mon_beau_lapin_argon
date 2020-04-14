@@ -1,50 +1,43 @@
 <template>
   <footer class="footer has-cards">
-    <div class="container">
-      <div class="row align-items-center justify-content-md-between">
-        <div class="col-md-6">
+    <div class="container foot">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-md-8">
           <div class="copyright">
             &copy; {{year}}
             Tous droits réservés.
           </div>
         </div>
-        <div class="col-md-6">
-          <ul class="nav nav-footer justify-content-end">
-            <li class="nav-item">
-              <a
-                target="_blank"
-                rel="noopener"
-                href="https://twitter.com/creativetim"
-                class="btn btn-neutral btn-icon-only btn-twitter btn-round btn-lg"
-                data-toggle="tooltip"
-                data-original-title="Follow us"
-                title="twitter"
-              >
-                <i class="fa fa-twitter"></i>
+        <div class="col-md-4">
+          <ul class="list-unstyled d-inline-flex img-fluid">
+            <li>
+              <a href="https://twitter.com/?lang=fr" target="_blank">
+                <img
+                  src="../../public/img/images/reseaux_sociaux/twitter.png"
+                  title="twitter"
+                  class="imgFooter"
+                />
               </a>
             </li>
-            <li class="nav-item">
-              <a
-                target="_blank"
-                rel="noopener"
-                href="https://www.facebook.com/creativetim"
-                class="btn btn-neutral btn-icon-only btn-facebook btn-round btn-lg"
-                data-toggle="tooltip"
-                data-original-title="Like us"
-              >
-                <i class="fa fa-facebook-square"></i>
+            <li>
+              <a href="https://www.instagram.com/?hl=fr" target="_blank">
+                <img
+                  src="../../public/img/images/reseaux_sociaux/instagram.png"
+                  title="instagram"
+                  class="imgFooter"
+                />
               </a>
             </li>
-            <li class="nav-item">
+            <li>
               <a
+                href="https://www.facebook.com/?stype=lo&jlou=AfeGvOsiG-pTY1kUHlDRrArc6VmDCdtnuD_YTzyQPC6xqEg9ElpTI6EEHuAboUFO7Qi-o7CAuKIOyyAu2-qGm4h1XOTM2b4ci766hg2sXvVr5Q&smuh=35373&lh=Ac_NwqmF7qdcJVDH"
                 target="_blank"
-                rel="noopener"
-                href="https://dribbble.com/creativetim"
-                class="btn btn-neutral btn-icon-only btn-dribbble btn-lg btn-round"
-                data-toggle="tooltip"
-                data-original-title="Follow us"
               >
-                <i class="fa fa-dribbble"></i>
+                <img
+                  src="../../public/img/images/reseaux_sociaux/social_facebook_0649.png"
+                  title="facebook"
+                  class="imgFooter"
+                />
               </a>
             </li>
           </ul>
@@ -53,6 +46,7 @@
     </div>
   </footer>
 </template>
+
 <script>
 export default {
   name: "app-footer",
@@ -63,8 +57,35 @@ export default {
   }
 };
 </script>
+
 <style>
-.footer {
-  background-color: #e8ffe6;
+.footer.has-cards {
+  margin-top: 0 !important;
+  padding-top: 5px !important;
+  padding-bottom: 30px !important;
+  height: 100px !important;
+  background-color: #e8ffe6 !important;
+}
+.imgFooter {
+  padding-left: 30px;
+  padding-bottom: 0 !important;
+}
+.foot {
+  margin-left: 100px !important;
+  margin-right: 100px !important;
+}
+
+/* TELEPHONE */
+@media screen and (max-width: 768px) {
+}
+/* Ipad */
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  .footer.has-cards {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    height: 70px !important;
+    background-color: #e8ffe6 !important;
+  }
 }
 </style>

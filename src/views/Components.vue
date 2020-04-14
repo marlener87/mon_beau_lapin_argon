@@ -1,6 +1,6 @@
 <template>
   <!-- TEXTE -->
-  <div class="container-fluid body">
+  <div class="container-fluid body p-4">
     <div class="text m-1">
       <h1
         class="phrase font-weight-bold text-center"
@@ -30,7 +30,7 @@
       </div>
 
       <div class="col-md-8">
-        <p class="font-weight-bold">Petits conseils:</p>
+        <h2 class="font-weight-bold pt-4">Petits conseils:</h2>
         <p
           class="espace"
         >- Non à la cage: elle n’est absolument pas adaptée aux lapins, qui sont des animaux vifs qui ont besoin d’espace pour courir et sauter.</p>
@@ -66,10 +66,32 @@
 .body {
   background-color: #edf8f3;
   font-family: "polYrsa", "Comic Sans MS", serif;
-  padding-top: 20px;
-  padding-left: 20px;
 }
 .espace {
   margin-bottom: 0;
+  font-size: 2vw;
+}
+/* TELEPHONE */
+@media screen and (max-width: 768px) {
+  .phrase {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 15px !important;
+  }
+  .espace {
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1000px) {
+  .phrase {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 15px !important;
+  }
+  .espace {
+    font-size: 10px;
+  }
 }
 </style>
