@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer has-cards">
+  <footer class="footer">
     <div class="container foot">
       <div class="row align-items-center justify-content-between">
         <div class="col-md-8">
@@ -59,7 +59,7 @@ export default {
 </script>
 
 <style>
-.footer.has-cards {
+.footer {
   margin-top: 0 !important;
   padding-top: 5px !important;
   padding-bottom: 30px !important;
@@ -79,13 +79,17 @@ export default {
 @media screen and (max-width: 768px) {
 }
 /* Ipad */
-@media screen and (min-width: 768px) and (max-width: 900px) {
-  .footer.has-cards {
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+  .footer {
     margin-top: 0 !important;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
     height: 70px !important;
     background-color: #e8ffe6 !important;
+  }
+  .foot {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 }
 </style>

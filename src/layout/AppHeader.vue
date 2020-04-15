@@ -63,11 +63,11 @@
                     <h6 class="heading text-primary mb-md-1">Adopter un lapin</h6>
                   </div>
                 </a>
-                <a href="#" class="media d-flex align-items-center">
+                <router-link to="profile" class="media d-flex align-items-center">
                   <div class="media-body ml-2">
                     <h6 class="heading text-primary mb-md-1">Préparer l'arrivée de mon lapin</h6>
                   </div>
-                </a>
+                </router-link>
               </div>
             </base-dropdown>
 
@@ -86,10 +86,15 @@
               <span class="nav-link-inner--text">Santé</span>
             </a>
 
-            <a slot="title" href="#" class="nav-link" data-toggle="dropdown" role="button">
+            <!--  <a slot="title" href="#" class="nav-link" data-toggle="dropdown" role="button">
               <i class="ni ni-collection d-lg-none"></i>
               <span class="nav-link-inner--text">Contact</span>
-            </a>
+            </a>-->
+
+            <router-link to="login" class="nav-link" data-toggle="dropdown" role="button">
+              <i class="ni ni-collection d-lg-none"></i>
+              <span class="nav-link-inner--text">Contact</span>
+            </router-link>
           </ul>
         </base-nav>
       </b-row>
